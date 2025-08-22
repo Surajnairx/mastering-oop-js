@@ -11,3 +11,5 @@ const circle = {
     console.log("draw");
   },
 };
+
+circle.draw();
