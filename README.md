@@ -43,4 +43,4 @@ It includes:
 ## 🛠️ How to Run
 1. Clone the repo  
    ```bash
-   git clone https://github.com/YOUR-USERNAME/oop-in-javascript.git
+   https://github.com/Surajnairx/mastering-oop-js.git
