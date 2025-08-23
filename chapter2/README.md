@@ -53,3 +53,16 @@ This section explains three important concepts in JavaScript OOP: **constructor 
 - **Constructor property** → identifies which function created an object.
 
 ---
+
+## 🔹 Functions Are Objects
+
+- In JavaScript, functions are **first-class objects**.
+- This means they can:
+  - Be assigned to variables
+  - Be passed as arguments to other functions
+  - Be returned from functions
+  - Have their own properties and methods
+
+### Function Constructor
+
+- Every function is created from the built-in **`Function` constructor**.
