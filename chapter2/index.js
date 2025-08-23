@@ -32,3 +32,12 @@ console.log(circle.constructor);
 
 console.log(another.constructor);
 //returns ƒ Object() { [native code] }
+
+//FUNCTIONS ARE OBJECTS
+console.log(Circle.name, Circle.length); //logs name of the function and the length of the parameter array
+
+// FUNCTION CONSTRUCTOR
+const Circle1 = new Function(
+  "radius",
+  `this.radius - radius; this.draw = fucntion(){console.log('draw');}`
+);
