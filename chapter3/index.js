@@ -61,14 +61,26 @@ circle.draw();
 circle.radius;
 
 //4. GETTERS / SETTERS
-Object.defineProperty(this, "defaultLocation", {
-  // way to define a property/function
-  get: function () {
-    // only returns the said property/method
-    return defaultLocation;
-  },
-  set: function (value) {
-    if (!value.x || !value.y) throw new Error("Invalid Location value"); //checking if the value provides has x and y units
-    defaultLocation = value;
-  },
-});
+
+//defining the Circle Constructor Function Again
+function Circle(radius) {
+  this.radius = radius;
+
+  let defaultLocation = { x: 0, y: 0 };
+
+  let computeOptimumLocation = function (factor) {};
+  this.draw = function () {
+    computeOptimumLocation(0.1);
+    console.log("draw");
+  };
+
+  Object.defineProperty(this, "defaultLocation", {
+    get: function () {
+      return defaultLocation;
+    },
+    set: function (value) {
+      if (!value.x || !value.y) throw new Error("Invalid Location value");
+      defaultLocation = value;
+    },
+  });
+}
